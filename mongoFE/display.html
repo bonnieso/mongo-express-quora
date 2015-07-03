@@ -1,0 +1,15 @@
+
+ <div class="boxes">
+  <div class="media" ng-repeat="question in questions">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" ng-src="{{question.gravatarUrl}}">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">{{question.email}} asked:</h4>
+      <div class="time hidden-xs">about 1 month ago</div>
+      <div>{{question.body}}</div>
+      <div class="hidden-xs"><a ng-href="/#/question/{{question.slug}}" class="btn btn-success btn-xs">View Answers</a></div>
+    </div>
+  </div>

@@ -1,0 +1,12 @@
+<div ng-repeat="o in oneQuestion">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" ng-src="{{o.gravatarUrl}}">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{o.email}} asked:</h4>
+    <div class="time hidden-xs">about 1 month ago</div>
+    <div>{{o.body}}</div>
+  </div>
+</div>
